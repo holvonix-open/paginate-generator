@@ -7,7 +7,7 @@ before_install:
 cache: yarn
 install:
   - yarn global add codecov
-  - yarn
+  - yarn --frozen-lockfile
 before_script:
   - export FAKE_HOSTNAME=travis-box
 script: yarn test-coverage

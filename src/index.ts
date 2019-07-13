@@ -1,8 +1,8 @@
 /*!
-# hx-node-template
+# paginate-generator
 
 This product contains software originally developed by Holvonix LLC.
-Original Repository: https://github.com/holvonix-open/hx-node-template
+Original Repository: https://github.com/holvonix-open/paginate-generator
 
 Copyright (c) 2019 Holvonix LLC. All rights reserved.
 

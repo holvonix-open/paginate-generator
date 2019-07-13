@@ -1,14 +1,14 @@
-# hx-node-template - 
+# paginate-generator - 
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE) [![npm](https://img.shields.io/npm/v/hx-node-template.svg)](https://www.npmjs.com/package/hx-node-template) [![Build Status](https://travis-ci.com/holvonix-open/hx-node-template.svg?branch=master)](https://travis-ci.com/holvonix-open/hx-node-template) [![GitHub last commit](https://img.shields.io/github/last-commit/holvonix-open/hx-node-template.svg)](https://github.com/holvonix-open/hx-node-template/commits) [![codecov](https://codecov.io/gh/holvonix-open/hx-node-template/branch/master/graph/badge.svg)](https://codecov.io/gh/holvonix-open/hx-node-template) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=holvonix-open/hx-node-template)](https://dependabot.com) [![DeepScan grade](https://deepscan.io/api/teams/XX/projects/YY/branches/ZZ/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=XX&pid=YY&bid=ZZ) [![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE) [![npm](https://img.shields.io/npm/v/paginate-generator.svg)](https://www.npmjs.com/package/paginate-generator) [![Build Status](https://travis-ci.com/holvonix-open/paginate-generator.svg?branch=master)](https://travis-ci.com/holvonix-open/paginate-generator) [![GitHub last commit](https://img.shields.io/github/last-commit/holvonix-open/paginate-generator.svg)](https://github.com/holvonix-open/paginate-generator/commits) [![codecov](https://codecov.io/gh/holvonix-open/paginate-generator/branch/master/graph/badge.svg)](https://codecov.io/gh/holvonix-open/paginate-generator) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=holvonix-open/paginate-generator)](https://dependabot.com) [![DeepScan grade](https://deepscan.io/api/teams/4465/projects/6380/branches/52918/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=4465&pid=6380&bid=52918) [![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
 
 
 ## Quick Start
 
-After `yarn add hx-node-template`:
+After `yarn add paginate-generator`:
 
 ````typescript
-import { TODO } from 'hx-node-template';
+import { TODO } from 'paginate-generator';
 
 async function getIt() {
   // TODO
@@ -24,10 +24,10 @@ Section 4d of the License.
 
 ````
 
-# hx-node-template
+# paginate-generator
 
 This product contains software originally developed by Holvonix LLC.
-Original Repository: https://github.com/holvonix-open/hx-node-template
+Original Repository: https://github.com/holvonix-open/paginate-generator
 
 Copyright (c) 2019 Holvonix LLC. All rights reserved.
 
