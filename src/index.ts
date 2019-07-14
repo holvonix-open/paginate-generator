@@ -21,6 +21,48 @@ limitations under the License.
 Third-party dependencies may have their own licenses.
 */
 
-export function todo() {
-  return true;
+export async function* paginate<T, U>(
+  func: (token?: U) => Promise<{ page: T[]; next?: U }>,
+  token?: U,
+  maxCount?: number
+) {
+  let next = token;
+  let doneCount = 0;
+  do {
+    const ret = await func(next);
+    const allEntries = ret.page;
+    const yielded = allEntries.slice(
+      0,
+      maxCount === undefined ? allEntries.length : maxCount - doneCount
+    );
+    doneCount += yielded.length;
+    yield* yielded;
+    next = ret.next;
+  } while (next && (maxCount === undefined || doneCount < maxCount));
+}
+
+export async function all<T>(a: AsyncIterableIterator<T>) {
+  const ret: T[] = [];
+  for await (const e of a) {
+    ret.push(e);
+  }
+  return ret;
+}
+
+export interface ItemOrError<T> {
+  item?: T;
+  // tslint:disable-next-line:no-any
+  error?: any;
+}
+
+export async function allUntilError<T>(a: AsyncIterableIterator<T>) {
+  const ret: Array<ItemOrError<T>> = [];
+  try {
+    for await (const e of a) {
+      ret.push({ item: e });
+    }
+  } catch (e) {
+    ret.push({ error: e });
+  }
+  return ret;
 }
