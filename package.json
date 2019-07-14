@@ -1,6 +1,6 @@
 {
   "name": "paginate-generator",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "An async generator facade for paginated APIs",
   "repository": {
     "type": "git",
@@ -64,8 +64,7 @@
     "posttest": "yarn run check",
     "preversion": "yarn test"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/mocha": "^5.2.5",
     "@types/node": "^12.6.1",
