@@ -6,7 +6,6 @@ before_install:
   - export PATH="$(yarn global bin):$PATH"
 cache: yarn
 install:
-  - yarn global add codecov
   - yarn --frozen-lockfile
 before_script:
   - export FAKE_HOSTNAME=travis-box
