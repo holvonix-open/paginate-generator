@@ -1,4 +1,4 @@
-# paginate-generator - 
+# paginate-generator -  An async generator facade for paginated APIs
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE) [![npm](https://img.shields.io/npm/v/paginate-generator.svg)](https://www.npmjs.com/package/paginate-generator) [![Build Status](https://travis-ci.com/holvonix-open/paginate-generator.svg?branch=master)](https://travis-ci.com/holvonix-open/paginate-generator) [![GitHub last commit](https://img.shields.io/github/last-commit/holvonix-open/paginate-generator.svg)](https://github.com/holvonix-open/paginate-generator/commits) [![codecov](https://codecov.io/gh/holvonix-open/paginate-generator/branch/master/graph/badge.svg)](https://codecov.io/gh/holvonix-open/paginate-generator) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=holvonix-open/paginate-generator)](https://dependabot.com) [![DeepScan grade](https://deepscan.io/api/teams/4465/projects/6380/branches/52918/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=4465&pid=6380&bid=52918) [![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
 
@@ -8,10 +8,22 @@
 After `yarn add paginate-generator`:
 
 ````typescript
-import { TODO } from 'paginate-generator';
+import { paginate, all } from 'paginate-generator';
 
-async function getIt() {
-  // TODO
+// paginatedApi will be called until it either returns no next token,
+// or max items have been retrieved (if defined).
+async function getIt(max : number) {
+  // all neatly gathers the pages into one array, but it may be more
+  // efficient to directly use "for await" on the paginate(...) call.
+  return all(paginate(async (token?: number) => {
+    // token will be undefined on first page (unless you pass one as the second param)
+    const apiReturn = await paginatedApi(token || 0);
+    return {
+      // should be undefined when no more pages to request
+      next: apiReturn.nextToken,
+      page: apiReturn.items,
+    };
+  }, undefined, max));
 }
 ````
 
