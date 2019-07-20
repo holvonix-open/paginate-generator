@@ -10,3 +10,4 @@ install:
 before_script:
   - export FAKE_HOSTNAME=travis-box
 script: yarn test-coverage
+after_success: yarn semantic-release
