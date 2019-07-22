@@ -21,22 +21,56 @@ limitations under the License.
 Third-party dependencies may have their own licenses.
 */
 
+export type ReportProgressFn = (
+  yielded: number,
+  estimatedTotal?: number
+) => // tslint:disable-next-line:no-any
+any;
+
 export async function* paginate<T, U>(
-  func: (token?: U) => Promise<{ page: T[]; next?: U }>,
+  func: (
+    token?: U
+  ) => Promise<{ page: T[]; next?: U; estimatedTotal?: number }>,
   token?: U,
-  maxCount?: number
+  maxCount?: number,
+  reportProgressFn?: ReportProgressFn
 ) {
   let next = token;
   let doneCount = 0;
   do {
     const ret = await func(next);
     const allEntries = ret.page;
+    const estMax = ret.estimatedTotal;
     const yielded = allEntries.slice(
       0,
       maxCount === undefined ? allEntries.length : maxCount - doneCount
     );
+    if (reportProgressFn) {
+      await reportProgressFn(
+        doneCount,
+        maxCount === undefined
+          ? estMax === undefined
+            ? undefined
+            : estMax
+          : estMax === undefined
+          ? maxCount
+          : Math.min(maxCount, estMax)
+      );
+    }
     doneCount += yielded.length;
     yield* yielded;
+    if (reportProgressFn) {
+      await reportProgressFn(
+        doneCount,
+        maxCount === undefined
+          ? estMax === undefined
+            ? undefined
+            : estMax
+          : estMax === undefined
+          ? maxCount
+          : Math.min(maxCount, estMax)
+      );
+    }
     next = ret.next;
   } while (next && (maxCount === undefined || doneCount < maxCount));
 }
