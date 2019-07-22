@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/holvonix-open/paginate-generator/compare/v1.1.0...v1.2.0) (2019-07-22)
+
+
+### Features
+
+* **progress:** report progress via a callback ([866590c](https://github.com/holvonix-open/paginate-generator/commit/866590c))
+
 # [1.1.0](https://github.com/holvonix-open/paginate-generator/compare/v1.0.0...v1.1.0) (2019-07-20)
 
 
