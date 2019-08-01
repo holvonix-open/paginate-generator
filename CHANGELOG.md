@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/holvonix-open/paginate-generator/compare/v1.2.2...v1.2.3) (2019-08-01)
+
+
+### Bug Fixes
+
+* **build:** fix broken build scripts ([bc0f29c](https://github.com/holvonix-open/paginate-generator/commit/bc0f29c))
+
 ## [1.2.2](https://github.com/holvonix-open/paginate-generator/compare/v1.2.1...v1.2.2) (2019-08-01)
 
 
