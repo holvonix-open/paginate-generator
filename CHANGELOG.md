@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/holvonix-open/paginate-generator/compare/v1.2.1...v1.2.2) (2019-08-01)
+
+
+### Bug Fixes
+
+* return to node 10 ([a6ffdb8](https://github.com/holvonix-open/paginate-generator/commit/a6ffdb8))
+
 ## [1.2.1](https://github.com/holvonix-open/paginate-generator/compare/v1.2.0...v1.2.1) (2019-08-01)
 
 
