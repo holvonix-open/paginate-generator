@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/holvonix-open/paginate-generator/compare/v1.2.0...v1.2.1) (2019-08-01)
+
+
+### Bug Fixes
+
+* permit node8,yarn1 ([38fd492](https://github.com/holvonix-open/paginate-generator/commit/38fd492))
+
 # [1.2.0](https://github.com/holvonix-open/paginate-generator/compare/v1.1.0...v1.2.0) (2019-07-22)
 
 
