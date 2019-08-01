@@ -81,7 +81,7 @@
     "gts": "^1.0.0",
     "mocha": "^6.1.4",
     "nyc": "^14.1.1",
-    "semantic-release": "^15.13.18",
+    "semantic-release": "^15.13.19",
     "ts-mocha": "^6.0.0",
     "typescript": "~3.5.0"
   }
