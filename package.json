@@ -15,8 +15,8 @@
     "promise"
   ],
   "engines": {
-    "node": "^10.15.3",
-    "yarn": "^1.12.3"
+    "node": "^8.0.0 || ^10.0.0",
+    "yarn": "^1.0.0"
   },
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
