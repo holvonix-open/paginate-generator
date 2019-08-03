@@ -90,6 +90,16 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@holvonix-open/release-config-js@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@holvonix-open/release-config-js/-/release-config-js-1.0.3.tgz#2164fbe4a26ca9ad18a90e3da89d05b5c3aa6906"
+  integrity sha512-hGZvzztOeHY+7Tw5Wb0KiwN3IS7MCzY3GCLO4KoR7Y7BMLFUxbuTJ172jN8XVvG0F9pAIp980CXaaJJrzvXsFQ==
+  dependencies:
+    "@semantic-release/changelog" "^3.0.4"
+    "@semantic-release/git" "^7.0.16"
+    conventional-changelog-angular "^5.0.3"
+    semantic-release "^15.13.19"
+
 "@nodelib/fs.scandir@2.1.1":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.1.tgz#7fa8fed654939e1a39753d286b48b4836d00e0eb"
@@ -1022,7 +1032,7 @@ console-control-strings@^1.0.0, console-control-strings@^1.1.0, console-control-
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
-conventional-changelog-angular@^5.0.0:
+conventional-changelog-angular@^5.0.0, conventional-changelog-angular@^5.0.3:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/conventional-changelog-angular/-/conventional-changelog-angular-5.0.3.tgz#299fdd43df5a1f095283ac16aeedfb0a682ecab0"
   integrity sha512-YD1xzH7r9yXQte/HF9JBuEDfvjxxwDGGwZU1+ndanbY0oFgA+Po1T9JDSpPLdP0pZT6MhCAsdvFKC4TJ4MTJTA==
