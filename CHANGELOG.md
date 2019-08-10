@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/holvonix-open/paginate-generator/compare/v1.2.4...v1.2.5) (2019-08-10)
+
+
+### 📖 Documentation
+
+* fix SPDX ([1e7b863](https://github.com/holvonix-open/paginate-generator/commit/1e7b863))
+
 ## [1.2.4](https://github.com/holvonix-open/paginate-generator/compare/v1.2.3...v1.2.4) (2019-08-10)
 
 
