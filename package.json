@@ -39,7 +39,7 @@
     "all": true
   },
   "author": "Holvonix LLC",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "Apache-2.0",
   "private": false,
   "scripts": {
     "t": "yarn fix && yarn test --grep='#slow' --invert",
