@@ -1,3 +1,21 @@
+## [1.2.4](https://github.com/holvonix-open/paginate-generator/compare/v1.2.3...v1.2.4) (2019-08-10)
+
+
+### 📖 Documentation
+
+* clarify license ([fa422d4](https://github.com/holvonix-open/paginate-generator/commit/fa422d4))
+
+
+### 🔧 Build / Continuous Integration
+
+* switch to release-config-js ([ad8b057](https://github.com/holvonix-open/paginate-generator/commit/ad8b057))
+
+
+### 🧦 Miscellaneous
+
+* **ci:** build only master branch ([96a12de](https://github.com/holvonix-open/paginate-generator/commit/96a12de))
+* **deps:** no automerge ([c0f87b6](https://github.com/holvonix-open/paginate-generator/commit/c0f87b6))
+
 ## [1.2.3](https://github.com/holvonix-open/paginate-generator/compare/v1.2.2...v1.2.3) (2019-08-01)
 
 
