@@ -1,3 +1,27 @@
+## [1.2.6](https://github.com/holvonix-open/paginate-generator/compare/v1.2.5...v1.2.6) (2019-08-28)
+
+
+### 🐛 Bug Fixes
+
+* **deps-dev:** bump typescript from 3.5.3 to 3.6.2 ([#21](https://github.com/holvonix-open/paginate-generator/issues/21)) ([a192b5d](https://github.com/holvonix-open/paginate-generator/commit/a192b5d))
+
+
+### 📖 Documentation
+
+* delete legacy bug template ([b97dddd](https://github.com/holvonix-open/paginate-generator/commit/b97dddd))
+
+
+### 🧦 Miscellaneous
+
+* **deps-dev:** bump @holvonix-open/release-config-js ([3a8c05b](https://github.com/holvonix-open/paginate-generator/commit/3a8c05b))
+* **deps-dev:** bump @holvonix-open/release-config-js ([192b00e](https://github.com/holvonix-open/paginate-generator/commit/192b00e))
+* **deps-dev:** bump @holvonix-open/release-config-js ([#15](https://github.com/holvonix-open/paginate-generator/issues/15)) ([ce72899](https://github.com/holvonix-open/paginate-generator/commit/ce72899))
+* Merge pull request #17 from holvonix-open/dependabot/npm_and_yarn/holvonix-open/release-config-js-1.0.7 ([a116045](https://github.com/holvonix-open/paginate-generator/commit/a116045)), closes [#17](https://github.com/holvonix-open/paginate-generator/issues/17)
+* stale settings ([c382c0f](https://github.com/holvonix-open/paginate-generator/commit/c382c0f))
+* **deps-dev:** bump @holvonix-open/release-config-js ([#18](https://github.com/holvonix-open/paginate-generator/issues/18)) ([0262461](https://github.com/holvonix-open/paginate-generator/commit/0262461))
+* **deps-dev:** bump @holvonix-open/release-config-js ([#20](https://github.com/holvonix-open/paginate-generator/issues/20)) ([2bd5f8e](https://github.com/holvonix-open/paginate-generator/commit/2bd5f8e))
+* **deps-dev:** bump @types/node from 12.6.8 to 12.7.1 ([#14](https://github.com/holvonix-open/paginate-generator/issues/14)) ([7adfbc1](https://github.com/holvonix-open/paginate-generator/commit/7adfbc1))
+
 ## [1.2.5](https://github.com/holvonix-open/paginate-generator/compare/v1.2.4...v1.2.5) (2019-08-10)
 
 
