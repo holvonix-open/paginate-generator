@@ -1,6 +1,6 @@
 {
   "name": "paginate-generator",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "An async generator facade for paginated APIs",
   "repository": {
     "type": "git",

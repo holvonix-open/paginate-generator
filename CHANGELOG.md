@@ -1,3 +1,18 @@
+## [1.2.7](https://github.com/holvonix-open/paginate-generator/compare/v1.2.6...v1.2.7) (2019-11-19)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** [security] bump https-proxy-agent from 2.2.2 to 2.2.4 ([#57](https://github.com/holvonix-open/paginate-generator/issues/57)) ([560d6c1](https://github.com/holvonix-open/paginate-generator/commit/560d6c1))
+
+
+### 🧦 Miscellaneous
+
+* **deps-dev:** bump @holvonix-open/release-config-js ([#31](https://github.com/holvonix-open/paginate-generator/issues/31)) ([68eb087](https://github.com/holvonix-open/paginate-generator/commit/68eb087))
+* **deps-dev:** bump @types/node from 12.7.1 to 12.7.2 ([#19](https://github.com/holvonix-open/paginate-generator/issues/19)) ([b1f93d8](https://github.com/holvonix-open/paginate-generator/commit/b1f93d8))
+* **deps-dev:** bump typescript from 3.6.2 to 3.7.2 ([#52](https://github.com/holvonix-open/paginate-generator/issues/52)) ([05e421b](https://github.com/holvonix-open/paginate-generator/commit/05e421b))
+* deps are chores in a library by default ([9af7e21](https://github.com/holvonix-open/paginate-generator/commit/9af7e21))
+
 ## [1.2.6](https://github.com/holvonix-open/paginate-generator/compare/v1.2.5...v1.2.6) (2019-08-28)
 
 
