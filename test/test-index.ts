@@ -328,7 +328,12 @@ describe('#paginate()', () => {
         const actual = await lib.all(
           lib.paginate<number, number>(o.func, undefined, 8, pt.func)
         );
-        assert.deepStrictEqual(pt.reports, [[0, 8], [4, 8], [4, 8], [8, 8]]);
+        assert.deepStrictEqual(pt.reports, [
+          [0, 8],
+          [4, 8],
+          [4, 8],
+          [8, 8],
+        ]);
         assert.deepStrictEqual(o.timesCalled, 2);
         assert.deepStrictEqual(o.tokens, [undefined, 10]);
         assert.deepStrictEqual(actual, [0, 1, 2, 3, 10, 11, 12, 13]);
@@ -354,7 +359,10 @@ describe('#paginate()', () => {
         const actual = await lib.allUntilError(
           lib.paginate<number, number>(o.func, undefined, 7, pt.func)
         );
-        assert.deepStrictEqual(pt.reports, [[0, 7], [4, 7]]);
+        assert.deepStrictEqual(pt.reports, [
+          [0, 7],
+          [4, 7],
+        ]);
         assert.deepStrictEqual(o.timesCalled, 2);
         assert.deepStrictEqual(o.tokens, [undefined, 10]);
         assert.deepStrictEqual(actual, [
@@ -372,7 +380,10 @@ describe('#paginate()', () => {
         const actual = await lib.all(
           lib.paginate<number, number>(o.func, undefined, 4, pt.func)
         );
-        assert.deepStrictEqual(pt.reports, [[0, 4], [4, 4]]);
+        assert.deepStrictEqual(pt.reports, [
+          [0, 4],
+          [4, 4],
+        ]);
         assert.deepStrictEqual(o.timesCalled, 1);
         assert.deepStrictEqual(o.tokens, [undefined]);
         assert.deepStrictEqual(actual, [0, 1, 2, 3]);
@@ -449,7 +460,10 @@ describe('#paginate()', () => {
           lib.paginate<number, number>(o.func, undefined, 2, pt.func)
         );
 
-        assert.deepStrictEqual(pt.reports, [[0, 2], [2, 2]]);
+        assert.deepStrictEqual(pt.reports, [
+          [0, 2],
+          [2, 2],
+        ]);
         assert.deepStrictEqual(o.timesCalled, 1);
         assert.deepStrictEqual(o.tokens, [undefined]);
         assert.deepStrictEqual(actual, [0, 1]);
@@ -493,7 +507,12 @@ describe('#paginate()', () => {
         const actual = await lib.all(
           lib.paginate<number, number>(o.func, 3, 7, pt.func)
         );
-        assert.deepStrictEqual(pt.reports, [[0, 7], [4, 7], [4, 7], [7, 7]]);
+        assert.deepStrictEqual(pt.reports, [
+          [0, 7],
+          [4, 7],
+          [4, 7],
+          [7, 7],
+        ]);
         assert.deepStrictEqual(o.timesCalled, 2);
         assert.deepStrictEqual(o.tokens, [3, 13]);
         assert.deepStrictEqual(actual, [
@@ -547,7 +566,12 @@ describe('#paginate()', () => {
         const actual = await lib.all(
           lib.paginate<number, number>(o.func, undefined, 8, pt.func)
         );
-        assert.deepStrictEqual(pt.reports, [[0, 8], [4, 8], [4, 8], [8, 8]]);
+        assert.deepStrictEqual(pt.reports, [
+          [0, 8],
+          [4, 8],
+          [4, 8],
+          [8, 8],
+        ]);
         assert.deepStrictEqual(o.timesCalled, 2);
         assert.deepStrictEqual(o.tokens, [undefined, 10]);
         assert.deepStrictEqual(actual, [0, 1, 2, 3, 10, 11, 12, 13]);
@@ -573,7 +597,10 @@ describe('#paginate()', () => {
         const actual = await lib.allUntilError(
           lib.paginate<number, number>(o.func, undefined, 7, pt.func)
         );
-        assert.deepStrictEqual(pt.reports, [[0, 7], [4, 7]]);
+        assert.deepStrictEqual(pt.reports, [
+          [0, 7],
+          [4, 7],
+        ]);
         assert.deepStrictEqual(o.timesCalled, 2);
         assert.deepStrictEqual(o.tokens, [undefined, 10]);
         assert.deepStrictEqual(actual, [
@@ -591,7 +618,10 @@ describe('#paginate()', () => {
         const actual = await lib.all(
           lib.paginate<number, number>(o.func, undefined, 4, pt.func)
         );
-        assert.deepStrictEqual(pt.reports, [[0, 4], [4, 4]]);
+        assert.deepStrictEqual(pt.reports, [
+          [0, 4],
+          [4, 4],
+        ]);
         assert.deepStrictEqual(o.timesCalled, 1);
         assert.deepStrictEqual(o.tokens, [undefined]);
         assert.deepStrictEqual(actual, [0, 1, 2, 3]);
@@ -668,7 +698,10 @@ describe('#paginate()', () => {
           lib.paginate<number, number>(o.func, undefined, 2, pt.func)
         );
 
-        assert.deepStrictEqual(pt.reports, [[0, 2], [2, 2]]);
+        assert.deepStrictEqual(pt.reports, [
+          [0, 2],
+          [2, 2],
+        ]);
         assert.deepStrictEqual(o.timesCalled, 1);
         assert.deepStrictEqual(o.tokens, [undefined]);
         assert.deepStrictEqual(actual, [0, 1]);
@@ -712,7 +745,12 @@ describe('#paginate()', () => {
         const actual = await lib.all(
           lib.paginate<number, number>(o.func, 3, 7, pt.func)
         );
-        assert.deepStrictEqual(pt.reports, [[0, 7], [4, 7], [4, 7], [7, 7]]);
+        assert.deepStrictEqual(pt.reports, [
+          [0, 7],
+          [4, 7],
+          [4, 7],
+          [7, 7],
+        ]);
         assert.deepStrictEqual(o.timesCalled, 2);
         assert.deepStrictEqual(o.tokens, [3, 13]);
         assert.deepStrictEqual(actual, [
@@ -766,7 +804,12 @@ describe('#paginate()', () => {
         const actual = await lib.all(
           lib.paginate<number, number>(o.func, undefined, 8, pt.func)
         );
-        assert.deepStrictEqual(pt.reports, [[0, 2], [4, 2], [4, 2], [8, 2]]);
+        assert.deepStrictEqual(pt.reports, [
+          [0, 2],
+          [4, 2],
+          [4, 2],
+          [8, 2],
+        ]);
         assert.deepStrictEqual(o.timesCalled, 2);
         assert.deepStrictEqual(o.tokens, [undefined, 10]);
         assert.deepStrictEqual(actual, [0, 1, 2, 3, 10, 11, 12, 13]);
@@ -792,7 +835,10 @@ describe('#paginate()', () => {
         const actual = await lib.allUntilError(
           lib.paginate<number, number>(o.func, undefined, 7, pt.func)
         );
-        assert.deepStrictEqual(pt.reports, [[0, 5], [4, 5]]);
+        assert.deepStrictEqual(pt.reports, [
+          [0, 5],
+          [4, 5],
+        ]);
         assert.deepStrictEqual(o.timesCalled, 2);
         assert.deepStrictEqual(o.tokens, [undefined, 10]);
         assert.deepStrictEqual(actual, [
@@ -810,7 +856,10 @@ describe('#paginate()', () => {
         const actual = await lib.all(
           lib.paginate<number, number>(o.func, undefined, 4, pt.func)
         );
-        assert.deepStrictEqual(pt.reports, [[0, 3], [4, 3]]);
+        assert.deepStrictEqual(pt.reports, [
+          [0, 3],
+          [4, 3],
+        ]);
         assert.deepStrictEqual(o.timesCalled, 1);
         assert.deepStrictEqual(o.tokens, [undefined]);
         assert.deepStrictEqual(actual, [0, 1, 2, 3]);
@@ -822,7 +871,12 @@ describe('#paginate()', () => {
         const actual = await lib.all(
           lib.paginate<number, number>(o.func, 3, 7, pt.func)
         );
-        assert.deepStrictEqual(pt.reports, [[0, 5], [4, 5], [4, 5], [7, 5]]);
+        assert.deepStrictEqual(pt.reports, [
+          [0, 5],
+          [4, 5],
+          [4, 5],
+          [7, 5],
+        ]);
         assert.deepStrictEqual(o.timesCalled, 2);
         assert.deepStrictEqual(o.tokens, [3, 13]);
         assert.deepStrictEqual(actual, [
