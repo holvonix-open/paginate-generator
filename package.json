@@ -56,11 +56,12 @@
     "check": "gts check",
     "compile": "tsc -p .",
     "fix": "gts fix",
-    "prepare": "yarn clean && yarn run check && yarn run compile",
+    "prepare": "yarn run snyk-protect && yarn clean && yarn run check && yarn run compile",
     "pretest": "yarn run compile",
     "posttest": "yarn run check",
     "preversion": "yarn test",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "snyk-protect": "snyk protect"
   },
   "release": {
     "extends": "@holvonix-open/release-config-js"
@@ -75,5 +76,9 @@
     "nyc": "^15.0.0",
     "ts-mocha": "^6.0.0",
     "typescript": "~3.7.2"
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.316.1"
   }
 }
